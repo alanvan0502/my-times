@@ -1,3 +1,4 @@
+/* Style the header */
 .header{
   display: flex;
   font-family: Verdana;
@@ -21,14 +22,136 @@
 }
 
 .logo{
-  display: inline-block;
   color: MediumAquamarine;
   display: flex;
   align-items: center;
   margin: 0 20px;
+  flex-grow: 1;
+  border: 1px solid black;
 }
 
 .logo span{
   display: inline-block;
   margin: 0 5px;
+}
+
+/* Style main container */
+.column{
+  display: flex;
+  border: 2px solid black;
+}
+
+.story{
+  border: 1px solid black;
+}
+
+span.header{
+  font-weight: 700;
+  font-size: 24px;
+}
+
+/*Large column*/
+.column .large{
+  display: flex;
+  border: 1px solid black;
+  width: 630px;
+  flex-shrink: 0;
+  flex-grow: 1;
+  margin: 10px;
+  flex-direction: column;
+}
+
+.main-story{
+  border: 1px solid black;
+}
+
+.main-story .image{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  background-image: url('../images/img-story-main.png');
+  background-size: cover;
+  height: 300px;
+  justify-content: center;
+}
+
+.main-story .image span{
+  color: white;
+  text-align: left;
+  font-family: Georgia;
+  font-size: 30px;
+  font-weight: 700;
+  margin-left: 20px;
+}
+
+.column .large div:nth-child(3){
+  background-image: url('../images/img-story-2.png');
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.column .large div:nth-child(3) span{
+  font-family: Georgia;
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+}
+
+.column .large div:nth-child(5){
+  background-image: url('../images/img-story-3.png');
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.column .large div:nth-child(5) span{
+  font-family: Georgia;
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+}
+
+/*Medium column*/
+.column .medium{
+  display: flex;
+  border: 1px solid black;
+  width: 300px;
+  margin: 10px;
+  flex-direction: column;
+  flex-shrink: 0;
+  flex-grow: 1;
+}
+
+#cat-ceo{
+  background-image: url('../images/img-story-1.png');
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+#cat-ceo span{
+  font-family: Georgia;
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+}
+
+/* Small column */
+.column .small{
+  display: flex;
+  border: 1px solid black;
+  width: 240px;
+  margin: 10px;
+  flex-direction: column;
+  flex-shrink: 0;
+  flex-grow: 1;
+}
+
+.small .story span.header{
+  text-transform: uppercase;
+  font-size: 18.72px;
 }
